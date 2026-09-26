@@ -37,3 +37,4 @@ fonts:
 
 `fonts:` 是必须的，接着是键 `maple` 和 `iosevka`
 反序列化时会自动转换成 `HashMap<String, PathBuf>`
+这个键值对将提供给程序的 `-u, --use` 命令
