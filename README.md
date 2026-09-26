@@ -25,7 +25,17 @@ cp ~/fosuii/target/release/fs /data/data/com.termux/files/usr/bin/fs
 > 运行 `fs` 命令，程序会自动初始化目录和配置文件。  
 > 以及目录 `~/.fonts` 使用 `-u --use, -s --swap` 不会强制使用此目录
 
-## Conf
+## USAGE
+
+`fosuii` 目前支持两种使用自定义字体的方式：  
+
+- -s, --swap
+- -u, --use
+
+`-s` 直接使用目标字体，比如 `fs -s ./f.ttf`  
+`-u` 会尝试反序列化 `config.yaml`，通过查找键值对来获取路径
+
+## CONF
 
 `fosuii` 使用 yaml 作为配置文件格式，位置在 `~/.config/fs/config.yaml`
 
@@ -38,5 +48,4 @@ fonts:
 ```
 
 `fonts:` 是必须的，接着是键 `maple` 和 `iosevka`  
-反序列化时会自动转换成 `HashMap<String, PathBuf>`  
-这个键值对将提供给程序的 `-u, --use` 命令
+反序列化时会自动转换成 `HashMap<String, PathBuf>`
