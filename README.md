@@ -23,7 +23,7 @@ cp ~/fosuii/target/release/fs /data/data/com.termux/files/usr/bin/fs
 ```
 
 > 运行 `fs` 命令，程序会自动初始化目录和配置文件。  
-> 以及目录 `~/.fonts` 使用 `-u --use, -s --swap` 不会强制使用此目录
+> 以及目录 `~/.fonts`，使用 `-u --use, -s --swap` 不会强制使用此目录
 
 ## USAGE
 
